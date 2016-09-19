@@ -1,0 +1,38 @@
+{
+  "name": "tinymonit",
+  "version": "0.0.1",
+  "description": "watching the cpu & mem of process",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/*.js",
+    "lint": "./node_modules/.bin/eslint lib/*.js",
+    "cover": "node ./node_modules/.bin/istanbul cover --preserve-comments ./node_modules/.bin/_mocha -- --reporter spec --timeout 10000 -c $(find ./test -name \"*.js\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardog/tinymonit.git"
+  },
+  "keywords": [
+    "process",
+    "monit",
+    "watch"
+  ],
+  "author": "hardog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hardog/tinymonit/issues"
+  },
+  "homepage": "https://github.com/hardog/tinymonit#readme",
+  "dependencies": {
+    "axon": "^2.0.2",
+    "lodash": "^4.15.0",
+    "pidusage": "^1.0.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mm": "^2.0.0",
+    "mocha": "^3.0.2"
+  }
+}
