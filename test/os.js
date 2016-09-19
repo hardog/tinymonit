@@ -59,7 +59,7 @@ describe('#os', () => {
 			let load = os.load();
 
 			expect(load).to.be.an('array');
-			expect(load[0].length).to.equal(4);
+			expect(load.length).to.equal(3);
 		});
 
 		it('shoud print load by custom format fn', () => {
