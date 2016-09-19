@@ -6,6 +6,12 @@ node_js:
   - '5'
   - '4'
 
+os:
+  - linux
+
+env:
+  - CXX=g++-4.8
+
 before_install:
   - '$CXX --version'
 
