@@ -15,6 +15,10 @@ collect the cpu & mem information from the specified machine(remote or local), s
 - judge if over the threshold
 - support cluster mode
 
+# Install
+
+`$ npm install tinymonit -g`
+
 # Usage
 
-TODO
+## Get system stat
