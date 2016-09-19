@@ -7,9 +7,14 @@
 
 collect the cpu & mem information from the specified machine(remote or local), supports cluster mode which gather all stats from config list!
 
-# 
+# Feature list
 
-# feature list
+- gather system cpu usage
+- gather system mem usage
+- gather specified process cpu & mem usage
+- judge if over the threshold
+- support cluster mode
 
-- collect cpu usage
-- 
+# Usage
+
+TODO
