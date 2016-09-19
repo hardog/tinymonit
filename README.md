@@ -22,3 +22,15 @@ collect the cpu & mem information from the specified machine(remote or local), s
 # Usage
 
 ## Get system stat
+
+## Examples
+
+- [get process stat](./example/proc_stat.js)
+- [get system stat](./example/sys_stat.js)
+- [how to use alarm](./example/threshold.js)
+- [single mode](./example/single)
+- [cluster mode](./example/cluster)
+
+## License
+
+MIT
