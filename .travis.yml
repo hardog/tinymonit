@@ -1,0 +1,15 @@
+sudo: false
+
+language: node_js
+node_js:
+  - '6'
+  - '5'
+  - '4'
+
+before_install:
+  - '$CXX --version'
+
+script:
+  - 'npm run lint'
+  - 'npm test'
+  - 'npm run cover'

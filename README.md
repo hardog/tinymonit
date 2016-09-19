@@ -1,5 +1,7 @@
-# tinyMonit
-monit system basic performance index
+# tinymonit
+
+[![Build Status](https://travis-ci.org/hardog/tinymonit.svg?branch=master)](https://travis-ci.org/hardog/tinymonit)
+
 
 
 # TODO
