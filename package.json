@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*.js",
     "lint": "./node_modules/.bin/eslint lib/*.js",
-    "cover": "node ./node_modules/.bin/istanbul cover --preserve-comments ./node_modules/.bin/_mocha -- --reporter spec --timeout 10000 -c $(find ./test -name \"*.js\")"
+    "travis": "node ./node_modules/.bin/istanbul cover --preserve-comments ./node_modules/.bin/_mocha -- --reporter spec --timeout 10000 -c $(find ./test -name \"*.js\")"
   },
   "repository": {
     "type": "git",
