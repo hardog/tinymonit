@@ -16,7 +16,7 @@ addons:
       - g++-4.8
 
 after_script:
-  - 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf ./coverage'
+  - 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
 
 sudo: false
 
