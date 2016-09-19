@@ -5,8 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*.js",
-    "lint": "./node_modules/.bin/eslint lib/*.js",
-    "travis": "node ./node_modules/.bin/istanbul cover --report html _mocha -- test --recursive"
+    "lint": "./node_modules/.bin/eslint lib/*.js"
   },
   "repository": {
     "type": "git",
