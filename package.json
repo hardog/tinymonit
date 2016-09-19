@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.13",
     "eslint": "^3.5.0",
     "istanbul": "^0.4.5",
     "mm": "^2.0.0",
