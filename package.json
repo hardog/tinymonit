@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*.js",
-    "lint": "./node_modules/.bin/eslint lib/*.js"
+    "lint": "./node_modules/.bin/eslint lib/*.js",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --  --reporter spec test"
   },
   "repository": {
     "type": "git",
