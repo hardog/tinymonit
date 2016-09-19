@@ -1,6 +1,6 @@
 {
   "name": "tinymonit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "watching the cpu & mem of process",
   "main": "lib/index.js",
   "scripts": {
