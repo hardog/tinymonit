@@ -18,6 +18,22 @@ describe('#osstat', function(){
 		.catch((e) => console.log(e));
 	});
 
+	it('should return os stat which has name & status property', function(done){
+		let pid = process.pid;
+		let more = [{pid: pid, name: 'test', statu: 'online'}];
+
+		Promise.resolve()
+		.then(() => osstat(pid, more))
+		.then((r) => {
+			expect(r.sys).to.be.an('object');
+			expect(r.procs).to.be.an('array');
+			expect(r.procs.length).to.be.equal(1);
+			expect(r.procs[0]).to.have.property('name');
+			done();
+		})
+		.catch((e) => console.log(e));
+	});
+
 	it('should reject when pid is wrong', function(done){
 		let pid = '22x';
 
