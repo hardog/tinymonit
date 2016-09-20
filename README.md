@@ -9,6 +9,7 @@ collect the cpu & mem information from the specified machine(remote or local), s
 
 # Feature list
 
+- promisify function
 - gather system cpu usage
 - gather system mem usage
 - gather specified process cpu & mem usage
