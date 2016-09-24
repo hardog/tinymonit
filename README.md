@@ -92,6 +92,8 @@ Promise.resolve()
 - [use alarm](./example/threshold.js)
 - [cluster mode](./example/cluster)
 
+if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug.
+
 ## License
 
 MIT
