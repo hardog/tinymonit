@@ -1,6 +1,6 @@
 {
   "name": "tinymonit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "watching the cpu & mem of process",
   "main": "lib/index.js",
   "scripts": {
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/hardog/tinymonit#readme",
   "dependencies": {
     "axon": "^2.0.2",
+    "debug": "^2.2.0",
     "lodash": "^4.15.0",
     "pidusage": "^1.0.5"
   },

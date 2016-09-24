@@ -26,6 +26,7 @@ describe('#osstat', function(){
 		.then(() => osstat(pid, more))
 		.then((r) => {
 			expect(r.sys).to.be.an('object');
+			expect(r.sys).to.have.property('cpus');
 			expect(r.procs).to.be.an('array');
 			expect(r.procs.length).to.be.equal(1);
 			expect(r.procs[0]).to.have.property('name');

@@ -22,14 +22,74 @@ collect the cpu & mem information from the specified machine(remote or local), s
 
 # Usage
 
-## Get system stat
+## Get os stat
+
+```
+const tm = require('tinymonit');
+const osstat = tm.osstat;
+
+Promise.resolve()
+.then(() => osstat([8122]))
+.then((stat) => console.log(r));
+```
+
+## create a part
+
+```
+const Part = require('tinymonit').part;
+
+let part = new Part(3000, {
+	timeout: 100,
+	pid: process.pid // this is defalut
+});
+```
+
+## create a central
+
+```
+const Central = require('tinymonit').central;
+
+let ctl = new Central({
+	timeout: 100,
+	parts:[
+		3000,
+		[3001, 200]
+		//'[remote ip]:[port]'
+	]
+});
+
+// start collect performance data from 3000, 3001
+Promise.resolve()
+.then(() => ctl.collect())
+.then((allstats) => {
+	// do sth
+});
+```
+
+## alarm when over threshold from cpu, mem etc.
+
+```
+const tm = require('tinymonit');
+const pid = process.pid;
+const osstat = tm.osstat;
+const alarm = tm.alarm;
+
+Promise.resolve()
+.then(() => osstat([pid]))
+.then((stat) => {
+	console.log(alarm.should_cpu_alarm(rstat, 1));
+	console.log(alarm.should_mem_alarm(stat));
+	console.log(alarm.should_load_alarm(stat));
+	console.log(alarm.should_procs_alarm(stat, 2));
+});
+
+```
 
 ## Examples
 
 - [get process stat](./example/proc_stat.js)
 - [get system stat](./example/sys_stat.js)
-- [how to use alarm](./example/threshold.js)
-- [single mode](./example/single)
+- [use alarm](./example/threshold.js)
 - [cluster mode](./example/cluster)
 
 ## License
