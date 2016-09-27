@@ -35,6 +35,20 @@ describe('#osstat', function(){
 		.catch((e) => console.log(e));
 	});
 
+	it('should return more when pids is empty', function(done){
+		let pid = process.pid;
+		let more = [{pid: pid, name: 'test', statu: 'online'}];
+
+		Promise.resolve()
+		.then(() => osstat([], more))
+		.then((r) => {
+			expect(r.sys).to.be.an('object');
+			expect(r.procs[0].name).to.be.equal('test');
+			done();
+		})
+		.catch((e) => console.log(e));
+	});
+
 	it('should reject when pid is wrong', function(done){
 		let pid = '22x';
 
