@@ -95,6 +95,7 @@ describe('#alarm', function(){
 
 		it('shoud return true when the loadavg large than default threshold(90) last 15m', function(){
 			osstat.sys.load[2] = 0.91;
+			osstat.procs = [{}];
 
 			let r = alarm.should_load_alarm(osstat);
 			expect(r).to.be.true;
@@ -102,6 +103,7 @@ describe('#alarm', function(){
 
 		it('shoud return true when the loadavg large than threshold(80) last 15m', function(){
 			osstat.sys.load[2] = 0.9;
+			osstat.procs = [{}];
 
 			let r = alarm.should_load_alarm(osstat, 80);
 			expect(r).to.be.true;
@@ -109,6 +111,7 @@ describe('#alarm', function(){
 
 		it('shoud return false when the loadavg less than default threshold(90) last 15m', function(){
 			osstat.sys.load[2] = 0.8;
+			osstat.procs = [{}];
 
 			let r = alarm.should_load_alarm(osstat, 90);
 			expect(r).to.be.false;
