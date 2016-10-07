@@ -98,4 +98,4 @@ if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug, it
 
 ## License
 
-MIT
+[MIT](https://github.com/hardog/tinymonit/blob/master/LICENSE)
