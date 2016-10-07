@@ -66,7 +66,7 @@ Promise.resolve()
 });
 ```
 
-## alarm when over threshold from cpu, mem etc.
+## alarm when over threshold
 
 ```
 const tm = require('tinymonit');
