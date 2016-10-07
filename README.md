@@ -92,7 +92,9 @@ Promise.resolve()
 - [use alarm](./example/threshold.js)
 - [cluster mode](./example/cluster)
 
-if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug.
+if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug, it would show following debug info:
+
+![tm-debug](http://hardog.net/images/assist/20161007/tm-debug.png)
 
 ## License
 
