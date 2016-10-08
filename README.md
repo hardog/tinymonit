@@ -34,9 +34,21 @@ wechat-tinymonit 代码详见: [点击查看wechat ui代码](https://github.com/
 
 `$ npm install tinymonit -g`
 
+# Test
+
+run test:
+```
+$ npm run test
+```
+
+run test coverage:
+```
+$ npm run cover
+```
+
 # Usage
 
-## Get os stat
+## get os stat
 
 ```
 const tm = require('tinymonit');
