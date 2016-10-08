@@ -18,6 +18,8 @@ if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug, it
 
 ![tm-wechat](http://hardog.net/images/assist/20161008/tm-wechat-example.gif)
 
+wechat-tinymonit 代码详见: [点击查看wechat ui代码](https://github.com/hardog/wechat-app-flexlayout)
+
 # Feature list
 
 - promisify function
