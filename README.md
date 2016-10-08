@@ -14,7 +14,8 @@ collect the cpu & mem information from the specified machine(remote or local), s
 - [use alarm](./example/threshold.js)
 - [cluster mode](./example/cluster)
 
-if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug, it would show following debug info:
+if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug.
+following, also i have made a wechat app example:
 
 ![tm-wechat](http://hardog.net/images/assist/20161008/tm-wechat-example.gif)
 
