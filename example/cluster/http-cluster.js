@@ -8,7 +8,9 @@ let ctl = new Central({
     timeout: 100, //ms
     parts: [
         3000, // just port
-        [3001, 200] // port and related timeout
+        [3001, 200], // port and related timeout
+        3002,
+        3003
     ]
 });
 

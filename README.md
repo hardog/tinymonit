@@ -7,6 +7,17 @@
 
 collect the cpu & mem information from the specified machine(remote or local), supports cluster mode which gather all stats from config list!
 
+## Examples
+
+- [get process stat](./example/proc_stat.js)
+- [get system stat](./example/sys_stat.js)
+- [use alarm](./example/threshold.js)
+- [cluster mode](./example/cluster)
+
+if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug, it would show following debug info:
+
+![tm-wechat](http://hardog.net/images/assist/20161008/tm-wechat-example.gif)
+
 # Feature list
 
 - promisify function
@@ -84,17 +95,6 @@ Promise.resolve()
 });
 
 ```
-
-## Examples
-
-- [get process stat](./example/proc_stat.js)
-- [get system stat](./example/sys_stat.js)
-- [use alarm](./example/threshold.js)
-- [cluster mode](./example/cluster)
-
-if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug, it would show following debug info:
-
-![tm-debug](http://hardog.net/images/assist/20161007/tm-debug.png)
 
 ## License
 
