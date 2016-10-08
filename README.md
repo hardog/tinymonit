@@ -9,10 +9,10 @@ collect the cpu & mem information from the specified machine(remote or local), s
 
 ## Examples
 
-- [get process stat](./example/proc_stat.js)
-- [get system stat](./example/sys_stat.js)
-- [use alarm](./example/threshold.js)
-- [cluster mode](./example/cluster)
+- [get process stat](https://github.com/hardog/tinymonit/blob/master/example/proc_stat.js)
+- [get system stat](https://github.com/hardog/tinymonit/blob/master/example/sys_stat.js)
+- [use alarm](https://github.com/hardog/tinymonit/blob/master/example/threshold.js)
+- [cluster mode](https://github.com/hardog/tinymonit/blob/master/example/cluster)
 
 if you wanna debug, just execute `$ DEBUG=* node example.js` to enable debug.
 following, also i have made a wechat app example:
